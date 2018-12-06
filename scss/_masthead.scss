@@ -1,0 +1,59 @@
+header.masthead {
+  position: relative;
+  background: url('../img/bg.jpg') no-repeat center center;
+  @include background-cover;
+  
+  padding-bottom: 2rem;
+  .overlay {
+    position: absolute;
+    background-color: $black;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+  }
+  .btn-custom{
+    background-color:$uxele-primary ;
+    border-color:$uxele-primary ;
+    color:$white;
+
+  }
+  .btn-custom:hover,.btn-custom:focus,.btn-custom:active  {
+    background-color:$uxele-primary ;
+  border-color:$uxele-primary ;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  .uxele-text-logo{
+    
+    
+    background: url("../img/uxele-logo.svg") no-repeat left center;
+    background-size:110px;
+    
+    display: inline-flex;
+    // img {
+      
+    //   vertical-align:text-bottom;
+    // }
+    div{
+      margin-left:110px;
+      vertical-align: text-bottom;
+      font-size: 5rem;
+      &:hover{
+        border: 0px;
+      }
+     
+    }
+    
+  }
+  @media (min-width: 768px) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}

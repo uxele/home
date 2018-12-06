@@ -1,0 +1,23 @@
+.navbar{
+  
+  &.navbar-custom{
+    background-color:$uxele-primary;
+    justify-content: left;
+    display: flex;
+    
+    span{
+       
+      font-size:1rem;
+      color:$white;  
+    }
+    .container {
+      justify-content: left;
+    }
+  }
+  .navbar-brand>img {
+    max-height:50px;
+    height:357px;
+    padding: 0px;
+   
+  }
+}
